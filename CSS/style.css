@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fbfefb;
+    
+}
+
+header{
+    background-color: #efe5dc;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    width: 60%;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7vh;
+    
+}
+nav > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    list-style: none;  
+    margin: auto 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    
+}
+.nav-link{
+    padding: 20px;
+    text-decoration: none; 
+    color:black
+}
+.nav-link:hover {
+  color: #f8f8f8;
+}
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    font-size: 30px;
+    color:#4d4643;
+    display: none;
+}
+@media (max-width: 780px){
+    header{
+        width: 100%;
+    }
+    .menu-icon{
+    color:#4d4643;
+    display:block;
+    }
+     /* when the checkbox is checked, show menu  */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+    .nav-link:hover {
+            color: #ffffff
+    }
+    .nav-links{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        background-color: #f3d8c77c;
+        border-radius: 0 0 50px 50px;
+    }
+    .nav-links li{
+        padding: 15px 0;
+        
+    }
+}
