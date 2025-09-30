@@ -7,7 +7,6 @@ body{
     display: flex;
     justify-content: center;
     background-color: #fbfefb;
-    
 }
 
 header{
@@ -21,9 +20,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    margin: 10px
-    
-    
+    margin: 10px;
 }
 
 nav{
@@ -32,26 +29,27 @@ nav{
     justify-content: space-around;
     height: 7vh;
     font-size: 20px;
-    
 }
+
 nav > h2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .nav-links{
     list-style: none;  
     margin: auto 0;
     width: 50%;
     display: flex;
     justify-content: space-between;
-    color:black;
-    
+    color:black; 
 }
+
 .nav-link{
     padding: 20px;
     text-decoration: none; 
-    color:black
+    color:black;
 }
 .nav-link:hover {
   color: #f8f8f8;
@@ -80,7 +78,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .bio{
@@ -98,8 +95,9 @@ main{
     width: auto;
     position: absolute;
     bottom: 12%;
-    left: 15%
+    left: 15%;
 }
+
 .profile-pic{
     height: 50vh;
     width: auto;
@@ -130,7 +128,7 @@ footer{
         display: flex;
     }
     .nav-link:hover {
-            color: #ffffff
+            color: #ffffff;
     }
     .nav-links{
         position: absolute;
@@ -163,8 +161,6 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        
-
     }
     .p-bio{
         text-align: center;
@@ -177,15 +173,10 @@ footer{
         width: auto;
         bottom: 130px;
         left: 13%;
-        right:
-        
-        
     }
     .profile-pic{
         position: absolute;
         height: 20vh;
         top: 20px;
-        
-        
     }
 }
