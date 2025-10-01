@@ -28,7 +28,9 @@ nav{
     align-items: center;
     justify-content: space-around;
     height: 7vh;
-    font-size: 50px;
+    font-size: 20px;
+    position:fixed;
+    width: 60%;
 }
 nav > h2{
     display: flex;
@@ -64,7 +66,7 @@ nav > h2{
 main{
     background-color: #efe5dc;
     border-radius: 200px;
-    border: 10px solid white;
+    border: 5px solid white;
     box-shadow:  1px 1px 50px rgb(162, 161, 161);
     margin-top: 15vh;
     margin-bottom: 10vh;
@@ -76,11 +78,11 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-    font-size: 40px;
+    font-size: 20px;
 }
 .bio h2{
     position: relative;
-    bottom: 10vh;
+    bottom: 13vh;
     text-align: left;
 }
 
@@ -97,13 +99,14 @@ main{
     display: flex;
     align-items:start;
     position:absolute;
-    bottom: 15vh;
+    bottom: 4vh;
     left: 20vw;
     text-align: left; 
-    border: 10px solid white; 
+    border: 5px solid white; 
     padding: 20px;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 30px;
+    width: 20%;
     
 }
 
@@ -117,7 +120,7 @@ main{
 .profile-pic{
     height: 50vh;
     width: auto;
-    border: 20px solid #d0b8ac;
+    border: 10px solid #d0b8ac;
     border-radius: 50%;
 }
 
@@ -128,7 +131,7 @@ footer{
     align-items: center;
     width: 100%;
     bottom: 3vh;
-    font-size: 50px;
+    font-size: 15px;
 }
 
 @media (max-width: 430px){
