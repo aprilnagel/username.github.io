@@ -134,9 +134,9 @@ footer{
     .nav-links li{
         padding: 15px;
         z-index: 7;
-        text-size-adjust: 
         
     }
+
     main{
         border-radius: 100px; 
         border: 7px solid white;
@@ -148,6 +148,4 @@ footer{
         margin-bottom: 10vh;
         z-index: 1;
     }
-       
-    
 }
