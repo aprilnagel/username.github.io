@@ -70,40 +70,21 @@ main{
     margin-top: 15vh;
     margin-bottom: 10vh;
     width: 80%;
-    padding: 40px;
+    padding: 60px;
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 4fr);
+    gap: 30px;
+    padding: 100px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-}
-
-.bio{
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 70px;
-    width: 80%;
     
 }
 
 
-.sig{
-    height: 20vh;
-    width: auto;
-    position: absolute;
-    bottom: 8%;
-    left: 10%;
-}
-.profile-pic{
-    height: 50vh;
-    width: auto;
-    border: 20px solid #d0b8ac;
-    border-radius: 50%;
-}
+
 
 footer{
     position: fixed;
@@ -168,32 +149,5 @@ footer{
         z-index: 1;
     }
        
-    .bio{
-        position: relative;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-    }
-    .p-bio{
-        text-align: center;
-        padding: 20px;
-        z-index: 3;
-    }
-    .sig{
-        object-position: center;
-        height: 15vh;
-        width: auto;
-        bottom: 130px;
-        left: 13%;
-    }
-    .profile-pic{
-        position: absolute;
-        height: 20vh;
-        top: 20px;
-        z-index: 4;
-    }
+    
 }
