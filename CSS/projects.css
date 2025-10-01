@@ -105,6 +105,10 @@ footer{
         position: fixed;
         z-index: 8;
     }
+    nav{
+        width: 100%;
+        position: fixed;
+    }
     nav > h2{
         font-size: 30px;
     }
@@ -143,11 +147,16 @@ footer{
         border-radius: 100px; 
         border: 7px solid white;
         width: 100%;
-        height: 80%;
-        padding: 0;
+        height: 70%;
+        padding: 25px 10px;
+        gap: 10px;
         margin: 10px;
         margin-top: 15vh;
         margin-bottom: 10vh;
         z-index: 1;
+
+    }
+    footer{
+        bottom: 1vh;
     }
 }

@@ -141,6 +141,9 @@ footer{
         position: fixed;
         z-index: 8;
     }
+     nav{
+        width: 100%;
+    }
     nav > h2{
         font-size: 30px;
     }
@@ -200,14 +203,16 @@ footer{
         text-align: left;
         display: flex;
         align-items:start;
-        position:absolute;
-        bottom: 3vh;
-        left: 24vw;
+        position:fixed;
+        bottom: 8vh;
+        left: 20vw;
         text-align: left; 
         border: 2px solid white; 
         padding: 15px;
         font-size: 15px;
         border-radius: 20px;
+        width: 50%;
+        
     }
 
     .skills li{
@@ -230,5 +235,8 @@ footer{
         top: 20px;
         z-index: 4;
         border: 5px solid #d0b8ac;
+    }
+    footer{
+        bottom: 2vh;
     }
 }
