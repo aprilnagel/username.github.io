@@ -6,21 +6,21 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #fbfefb;
+    background-color: #fbfefb;  
 }
 
 header{
     background-color: #efe5dc;
     padding: 10px;
     border-radius: 30px;
-    border: 2px solid rgb(132, 128, 128);
+    border: 5px solid rgb(132, 128, 128);
     width: 60%;
     height: 7vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    margin: 10px;
+    margin: 10px;  
 }
 
 nav{
@@ -28,24 +28,21 @@ nav{
     align-items: center;
     justify-content: space-around;
     height: 7vh;
-    font-size: 20px;
+    font-size: 50px;
 }
-
 nav > h2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .nav-links{
     list-style: none;  
     margin: auto 0;
     width: 50%;
     display: flex;
     justify-content: space-between;
-    color:black; 
+    color:black;
 }
-
 .nav-link{
     padding: 20px;
     text-decoration: none; 
@@ -67,7 +64,7 @@ nav > h2{
 main{
     background-color: #efe5dc;
     border-radius: 200px;
-    border: 3px solid white;
+    border: 10px solid white;
     box-shadow:  1px 1px 50px rgb(162, 161, 161);
     margin-top: 15vh;
     margin-bottom: 10vh;
@@ -78,6 +75,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    font-size: 40px;
+}
+.bio h2{
+    position: relative;
+    bottom: 10vh;
+    text-align: left;
 }
 
 .bio{
@@ -86,22 +90,34 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 70px;
     width: 80%;
 }
+.skills-section{
+    text-align: left;
+    display: flex;
+    align-items:start;
+    position:absolute;
+    bottom: 15vh;
+    left: 20vw;
+    text-align: left; 
+    border: 10px solid white; 
+    padding: 20px;
+    font-size: 50px;
+    border-radius: 30px;
+    
+}
 
-.sig{
-    height: 20vh;
-    width: auto;
-    position: absolute;
-    bottom: 12%;
-    left: 15%;
+.skills li{
+    position: relative;
+    display: inline-block;
+    
+
 }
 
 .profile-pic{
     height: 50vh;
     width: auto;
-    border: 5px solid #d0b8ac;
+    border: 20px solid #d0b8ac;
     border-radius: 50%;
 }
 
@@ -118,6 +134,8 @@ footer{
     header{
         width: 100%;
         border-radius: 0;
+        position: fixed;
+        z-index: 8;
     }
     .menu-icon{
     color:#4d4643;
@@ -126,6 +144,7 @@ footer{
      /* when the checkbox is checked, show menu  */
     #menu-toggle:checked + .menu-icon + .nav-links {
         display: flex;
+    
     }
     .nav-link:hover {
             color: #ffffff;
@@ -140,9 +159,11 @@ footer{
         display: none;
         background-color: #f3d8c77c;
         border-radius: 0 0 50px 50px;
+        
     }
     .nav-links li{
         padding: 15px;
+        z-index: 7;
     }
     main{
         border-radius: 100px; 
@@ -151,32 +172,53 @@ footer{
         margin: 10px;
         margin-top: 15vh;
         margin-bottom: 10vh;
+        z-index: 1;
     }
        
     .bio{
         position: relative;
         height: 100%;
         width: 100%;
-        padding: 0;
+        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 2;
     }
+    .skills-section{
+        text-align: left;
+        display: flex;
+        align-items:start;
+        position:absolute;
+        bottom: 10vh;
+        left: 24vw;
+        text-align: left; 
+        border: 2px solid white; 
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+    .skills li{
+        position: relative;
+        display: inline-block;
+        
+
+    }
+
     .p-bio{
         text-align: center;
-        padding: 20px;
-        
+        position: absolute;
+        top: 2vh;
+        padding: 40px;
+        z-index: 3;
+        font-size: 20px;
     }
-    .sig{
-        object-position: center;
-        height: 15vh;
-        width: auto;
-        bottom: 130px;
-        left: 13%;
-    }
+   
     .profile-pic{
         position: absolute;
         height: 20vh;
         top: 20px;
+        z-index: 4;
     }
 }
